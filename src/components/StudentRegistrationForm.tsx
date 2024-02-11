@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './StudentRegistrationForm.css';
+// import '../style/StudentRegistrationForm.css';
 interface Student {
   firstName: string;
   lastName: string;
@@ -7,7 +7,6 @@ interface Student {
   dob: string;
   email: string;
 }
-
 interface Props {
   onSubmit: (student: Student) => void;
 }
@@ -78,8 +77,8 @@ const StudentRegistrationForm: React.FC<Props> = ({ onSubmit }) => {
   };
 
   return (
-    <div>
-      <h1>Student Registration</h1>
+    <div className='parent-div'>
+      <h1 className='topheading'>Student Registration</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="firstName">First Name:</label>
