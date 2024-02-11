@@ -2,18 +2,57 @@ body{
   width: 100vw;
   height: 100vh;
 }
-form div label{
-  font-size: 1.5em;
-  color:rgb(49, 58, 59);
-  font-weight: 700;
+.parent-div{
+  margin-left: 30vw;
 }
-form div input, form div textarea{
-background-color: rgb(241, 242, 243);
-outline: none;
-font-size: 1.3em;
-font-weight: 500;
+  form {
+    display: flex;
+    /* border: 2px solid red; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:15rem;
+    margin: auto;
+  }
 
-}
-form div input{
-  height: 2em;
-}
+  form div input {
+    height: 2.5rem;
+    width:33rem;
+    background-color: rgb(245, 248, 249);
+    font-size: 1.1em;
+    outline: none;
+  }
+  form div select{
+    height: 2.5rem;
+    width:33.5rem;
+    background-color: rgb(245, 248, 249);
+    font-size: 1.1em;
+    outline: none;
+
+  }
+  div h1{
+    color: cadetblue;
+  }
+  div span{
+    color:red;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  
+  form div label{
+    font-size: 1.4em;
+    font-weight: 700;
+    color: cadetblue;
+  }
+  form button{
+    background-color: cadetblue;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: white;
+    margin-top: 40px;
+    outline: none;
+    border: 2px solid green;
+  }
+  table{
+    border:2px solid red;
+  }
